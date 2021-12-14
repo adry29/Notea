@@ -7,23 +7,18 @@
 <ion-content>
   <ion-content>
     <ion-card>
-      <ion-card-header>
-        <ion-card-subtitle style="text-align: center;">
-          <ion-icon class="icon" name="person-circle-outline"></ion-icon>
-        </ion-card-subtitle>
-      </ion-card-header>
-  
+      
       <ion-card-content>
         
           <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
             <ion-item lines="full">
-              <ion-label position="floating">Email</ion-label>
+              <ion-label position="floating">Correo</ion-label>
               <ion-input type="text" id="inputEmail" class="form-control" formControlName="email" required autofocus></ion-input>
             </ion-item>
     
             <ion-item lines="full">
-              <ion-label position="floating">Password</ion-label>
-              <ion-input type="password" id="inputPassword" class="form-control" formControlName="password" required></ion-input>
+              <ion-label position="floating">Contraseña</ion-label>
+              <ion-input type="password" class="form-control" formControlName="password" required></ion-input>
             </ion-item>
   
           <ion-button type="submit" expand="block" [disabled]="!loginForm.valid" (click)="onSubmit()">Iniciar sesión</ion-button>
