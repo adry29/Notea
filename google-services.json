@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "257290295573",
+    "firebase_url": "https://notea-b37a6-default-rtdb.firebaseio.com",
+    "project_id": "notea-b37a6",
+    "storage_bucket": "notea-b37a6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:257290295573:android:3dea9fab19fe28199b711c",
+        "android_client_info": {
+          "package_name": "com.adry29.Notea"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "257290295573-ep034arnmeg9187nn0ineki8o7ocgjve.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.adry29.Notea",
+            "certificate_hash": "7fc288efa6fedd055fb72f9f5411c3bed59b2cd1"
+          }
+        },
+        {
+          "client_id": "257290295573-htv6gq9kv5j6q2nssemeve2ism20osn6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBG9PDc96A0EmcZRAjp1Hno9Z92WVeajjU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "257290295573-htv6gq9kv5j6q2nssemeve2ism20osn6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

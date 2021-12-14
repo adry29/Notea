@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-content>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle style="text-align: center;">
+          <ion-icon class="icon" name="person-circle-outline"></ion-icon>
+        </ion-card-subtitle>
+      </ion-card-header>
+  
+      <ion-card-content>
+        
+          <form [formGroup]="signform" (ngSubmit)="onSubmit()">
+            <ion-item class="item" lines="full">
+              <ion-label position="floating">Email</ion-label>
+              <ion-input type="text" id="inputEmail" class="form-control" formControlName="email" required autofocus></ion-input>
+            </ion-item>
+    
+            <ion-item class="item" lines="full">
+              <ion-label position="floating">Password</ion-label>
+              <ion-input type="password" id="inputPassword" class="form-control" formControlName="password" required></ion-input>
+            </ion-item>
+  
+          <ion-button type="submit" expand="block" (click)="onSubmit()" [disabled]="!signform.valid">Registrarme</ion-button>
+          <ion-button type="button" expand="block" color="medium" fill="clear" (click)="cancel()">Ya tengo un usuario</ion-button>
+  
+          </form>
+        
+      </ion-card-content>
+    </ion-card>
+
+</ion-content>

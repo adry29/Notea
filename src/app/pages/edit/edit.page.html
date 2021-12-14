@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Editar</ion-title>
+  </ion-toolbar>
+  
+</ion-header>
+
+<ion-content>
+  
+  <form [formGroup]="formNota" (ngSubmit)="updateNota()">
+    <ion-item>
+      <ion-label position="floating"><ion-icon name="receipt-sharp"></ion-icon>Título</ion-label>
+      <ion-input type="text" formControlName="title" [(ngModel)]="this.nota.title"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating"><ion-icon name="chatbox-ellipses-sharp"></ion-icon>Descripción</ion-label>
+      <ion-textarea type="text" formControlName="description" [(ngModel)]="this.nota.description"></ion-textarea>
+    </ion-item>
+    <ion-button expand="full" color="primary" type="submit" [disabled]="!formNota.valid" >Agregar</ion-button>
+    <ion-button expand="full" color="secondary" (click)="closeModal()" >Cancelar</ion-button>
+  </form>
+</ion-content>
